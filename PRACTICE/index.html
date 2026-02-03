@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>For my Baby!</title>
+</head>
+
+<body>
+    <h1>Will you be my valentine?</h1>
+    <button id="yes"><a href="yes.html">Yes!</a></button>
+    <button id="no">No!</button>
+
+<script>
+  const noBtn = document.getElementById("no");
+
+  noBtn.onclick = function () {
+    this.style.position = "absolute";
+    this.style.left = Math.random() * (window.innerWidth - this.offsetWidth) + "px";
+    this.style.top = Math.random() * (window.innerHeight - this.offsetHeight) + "px";
+  };
+</script>
+</body>
+</html> 
+
